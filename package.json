@@ -1,0 +1,23 @@
+{
+  "name": "andreacanton.com",
+  "version": "1.0.0",
+  "description": "Personal website of Andrea Canton",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreacanton/andreacanton.com.git"
+  },
+  "keywords": ["personal", "websitoe"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreacanton/andreacanton.com/issues"
+  },
+  "homepage": "https://github.com/andreacanton/andreacanton.com#readme"
+}
