@@ -13,11 +13,17 @@
     "type": "git",
     "url": "git+https://github.com/andreacanton/andreacanton.com.git"
   },
-  "keywords": ["personal", "websitoe"],
+  "keywords": [
+    "personal",
+    "websitoe"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/andreacanton/andreacanton.com/issues"
   },
-  "homepage": "https://github.com/andreacanton/andreacanton.com#readme"
+  "homepage": "https://github.com/andreacanton/andreacanton.com#readme",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
 }
