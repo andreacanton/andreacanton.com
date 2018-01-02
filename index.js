@@ -1,7 +1,8 @@
+'use strict';
+
 //some important stuff
 import _ from 'lodash';
-import './css/normalize.css';
-import './css/main.css';
+import './src/main.scss';
 
 //Owners
 import OwnerPhotoSrc from './img/me.jpg';
@@ -19,6 +20,7 @@ var website = {
     document.body.appendChild(subtitle);
 
     var profiles = document.createElement('section');
+    profiles.id = "profiles-section"
     var profiles_introduction = document.createElement('p');
     profiles_introduction.innerHTML = 'Here some of my profiles:';
     profiles.appendChild(profiles_introduction);
@@ -26,6 +28,7 @@ var website = {
     document.body.appendChild(profiles);
 
     var owners_photo = new Image();
+    owners_photo.id = "owners-photo";
     owners_photo.alt = owner.name + "'s recent picture";
     owners_photo.src = OwnerPhotoSrc;
     document.body.appendChild(owners_photo);
@@ -37,9 +40,9 @@ var website = {
 
     _.each(owner.profiles, function (value, key) {
       var item = document.createElement('li');
-      item.id = key + "-link";
 
       var anchor = document.createElement('a');
+      anchor.id = key + "-link";
       anchor.href = value.url;
       anchor.innerHTML = value.title;
       anchor.rel = "me";
