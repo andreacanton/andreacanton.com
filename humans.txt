@@ -7,9 +7,10 @@
 
 # THANKS
 
-    everybody, even you that are spending some of your precious time to read this file!
+    everybody, in particular:
+    - you that are spending some of your precious time to read this file!
+
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5, nodejs, webpack,
-    Apache Server Configs, Modernizr
+    CSS3, HTML5, nodejs, webpack
