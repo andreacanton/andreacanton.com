@@ -19,10 +19,12 @@ module.exports = {
      new CleanWebpackPlugin(['dist']),
      new HtmlWebpackPlugin({
        title: _.join([owner.name, owner.surname], ' ') + ' | personal website',
+       description: "Website of a Human being, web developer, vegetarian based in Verona area, Italy",
        svgoConfig: {
             removeTitle: false,
             removeViewBox: true,
         },
+        template: 'template/index.html',
      }),
      new HtmlWebpackInlineSVGPlugin(),
      new GoogleFontsPlugin({
