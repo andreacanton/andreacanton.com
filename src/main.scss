@@ -1,0 +1,78 @@
+@import 'node_modules/normalize-scss/sass/normalize';
+@include normalize();
+
+$container_width: 600px;
+
+@function rhythm($fontsize, $lineheight: 1.4) {
+  @return ($lineheight + 0em) / $fontsize + 0em;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+body{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  width: $container_width;
+  margin: 0 auto;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2em;
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  padding: rhythm(2);
+}
+
+#owners-photo {
+  width: $container_width;
+  margin-bottom:-10px;
+}
+
+#profiles-section {
+  ul {
+    list-style:none;
+    padding:0;
+    margin:0 auto;
+    @include clearfix();
+    width:300px;
+    li {
+      float:left;
+      width:100px;
+
+      a {
+        margin: 20px;
+        display:inline-block;
+        border: 2px solid #000;
+        border-radius: 50%;
+        img {
+          width: 40px;
+          margin: 0 7px 7px;
+          fill: #000;
+        }
+
+        &#facebook-link {
+          border-color: #3b5998;
+        }
+        &#twitter-link {
+          border-color: #0084b4;
+        }
+        &#linkedin-link {
+          border-color: #0077B5;
+        }
+      }
+    }
+  }
+}
