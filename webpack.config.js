@@ -1,7 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
+const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
+const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 const package = require('./package.json');
 const owner = require('./data/owner.json');
 const _ = require('lodash');
@@ -17,8 +18,15 @@ module.exports = {
   plugins: [
      new CleanWebpackPlugin(['dist']),
      new HtmlWebpackPlugin({
-       title: _.join([owner.name, owner.surname], ' ') + ' | personal website'
+       title: _.join([owner.name, owner.surname], ' ') + ' | personal website',
+       description: "Website of a Human being, web developer, vegetarian based in Verona area, Italy",
+       svgoConfig: {
+            removeTitle: false,
+            removeViewBox: true,
+        },
+        template: 'template/index.html',
      }),
+     new HtmlWebpackInlineSVGPlugin(),
      new GoogleFontsPlugin({
 			fonts: [
 				{ family: "Source Sans Pro" },
