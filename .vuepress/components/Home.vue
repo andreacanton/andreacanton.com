@@ -2,7 +2,7 @@
   <div class="container home">
     <h1>Andrea Canton</h1>
     <div class="summary">
-      <p>Vegetarian web developer</p>
+      <h2>Vegetarian web developer</h2>
       <p>Based in Verona, Italy</p>
     </div>
     <nav>
@@ -54,6 +54,10 @@ h1
   font-size 30px
   font-family 'JetBrains Mono'
   margin-bottom: 2em;
+  h2
+    font-size inherit
+    font-weight 400
+    margin 0
   p
     margin 0
 
