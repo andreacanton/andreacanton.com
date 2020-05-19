@@ -1,5 +1,10 @@
 <template>
-  <Home v-if="isHome" />
+  <div class="container">
+    <Home v-if="isHome" />
+    <template v-else>
+      <Content />
+    </template>
+  </div>
 </template>
 <script>
 import Home from '../components/Home';
@@ -13,3 +18,8 @@ export default {
   },
 };
 </script>
+<style lang="stylus" scoped>
+.container
+  width 600px
+  margin 0 auto
+</style>

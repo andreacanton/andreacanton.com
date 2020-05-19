@@ -1,5 +1,5 @@
 <template>
-  <div class="container home">
+  <div class="home">
     <h1>Andrea Canton</h1>
     <div class="summary">
       <h2>Vegetarian web developer</h2>
@@ -43,10 +43,8 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
-.container
+.home
   text-align center
-  width 600px
-  margin 0 auto
 h1
   font-size 70px
 
