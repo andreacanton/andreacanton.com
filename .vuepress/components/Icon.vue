@@ -51,6 +51,7 @@ svg
   height 30px
   .logo
     fill $grey
+    transition fill 120ms ease-in-out 0s
 .twitter
   width 45px
   height 45px
