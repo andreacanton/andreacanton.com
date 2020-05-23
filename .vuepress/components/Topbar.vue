@@ -1,6 +1,6 @@
 <template>
   <header>
-    <a class="logo" href="/">
+    <a class="logo no-effects" href="/">
       <picture>
         <img src="/images/me_thumb.jpg" alt="Andrea Canton - Web Developer" />
       </picture>
@@ -9,17 +9,17 @@
     <nav>
       <ul>
         <li>
-          <a href="https://twitter.com/andreacanton">
+          <a href="https://twitter.com/andreacanton" class="no-effects">
             <Icon name="twitter" />
           </a>
         </li>
         <li>
-          <a href="https://github.com/andreacanton">
+          <a href="https://github.com/andreacanton" class="no-effects">
             <Icon name="github" />
           </a>
         </li>
         <li>
-          <a href="https://dev.to/andreacanton">
+          <a href="https://dev.to/andreacanton" class="no-effects">
             <Icon name="devto" />
           </a>
         </li>
