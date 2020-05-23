@@ -47,6 +47,7 @@ export default {
   text-align center
 h1
   font-size 70px
+  font-family 'Rubik', sans-serif;
 
 .summary
   font-size 30px

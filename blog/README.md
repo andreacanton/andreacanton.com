@@ -1,7 +1,10 @@
+---
+title: Blog di Andrea Canton
+description: sulla vita di uno sviluppatore web vegetariano
+---
+
 # Blog di Andrea Canton
 
 Benvenuto nel mio blog personale.
-
-Nulla è ancora stato pubblicato... Mi dispiace.
 
 [Torna alla home](/)

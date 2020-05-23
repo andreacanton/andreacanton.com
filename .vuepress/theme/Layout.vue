@@ -2,24 +2,35 @@
   <div class="container">
     <Home v-if="isHome" />
     <template v-else>
-      <Content />
+      <Topbar />
+      <Blog v-if="isBlog" />
+      <template v-else>
+        <h1 class="entry-title">{{ $page.title }}</h1>
+        <Content />
+      </template>
     </template>
   </div>
 </template>
 <script>
 import Home from '../components/Home';
+import Topbar from '../components/Topbar';
+import Blog from '../components/Blog';
+import BlogEntry from '../components/BlogEntry';
 export default {
   name: 'Layout',
-  components: { Home },
+  components: { Home, Topbar, Blog, BlogEntry },
   computed: {
     isHome() {
       return this.$page.path == '/';
+    },
+    isBlog() {
+      return this.$page.path == '/blog/';
     },
   },
 };
 </script>
 <style lang="stylus" scoped>
 .container
-  width 600px
+  width 650px
   margin 0 auto
 </style>
