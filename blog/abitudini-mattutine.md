@@ -1,5 +1,5 @@
 ---
-when: 14/02/2020
+when: 2020-02-14
 title: Come ho cominciato ad avere delle buone abitudini mattutine
 ---
 

@@ -23,7 +23,7 @@
           </a>
         </li>
         <li>
-          <a href="/blog" class="blog">
+          <a v-if="haveBlogEntries" href="/blog" class="blog">
             blog
           </a>
         </li>
@@ -39,6 +39,18 @@ import Icon from './Icon';
 export default {
   components: {
     Icon,
+  },
+  computed: {
+    haveBlogEntries() {
+      const blogPages = this.$site.pages.filter(
+        p =>
+          /^\/blog\/.+$/.test(p.path) &&
+          p.title &&
+          p.frontmatter.when &&
+          !p.frontmatter.draft
+      );
+      return blogPages.length > 0;
+    },
   },
 };
 </script>

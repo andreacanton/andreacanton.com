@@ -25,6 +25,7 @@
         "vuepress": "^1.4.1"
     },
     "dependencies": {
+        "date-fns": "^2.14.0",
         "normalize-styl": "^4.1.1"
     }
 }

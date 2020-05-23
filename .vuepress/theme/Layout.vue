@@ -4,10 +4,7 @@
     <template v-else>
       <Topbar />
       <Blog v-if="isBlog" />
-      <template v-else>
-        <h1 class="entry-title">{{ $page.title }}</h1>
-        <Content />
-      </template>
+      <BlogEntry v-else />
     </template>
   </div>
 </template>
