@@ -1,12 +1,8 @@
-#Personal website
+---
+title: Andrea Canton - Full-stack Web Developer
+description: Website of Andrea Canton a veggie web developer based in Verona
+---
+
+# Personal website of Andrea Canton
 
 Hi! This is the repository of my personal website.
-
-Developed with webpack (for now!)
-
-
-TODO:
-* find a style library and install it (bootstrap?)
-* add a form that sand me an email
-* add a sistem for post things (bloglike)
-* add a personal shop (very amitious!!!)
