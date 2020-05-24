@@ -14,13 +14,15 @@
   </section>
 </template>
 <script>
-import { format, parseISO } from 'date-fns';
+import { isValid, format, parseISO } from 'date-fns';
 import { it } from 'date-fns/locale';
 export default {
   name: 'BlogEntry',
   computed: {
     theDate() {
-      return format(parseISO(this.$page.frontmatter.when), 'dd/MM/yyyy');
+      return isValid(this.$page.frontmatter.when)
+        ? format(parseISO(this.$page.frontmatter.when), 'dd/MM/yyyy')
+        : '';
     },
     twitterLink() {
       const url = `http://www.andreacanton.com${this.$page.path}`;
