@@ -20,9 +20,8 @@ export default {
   name: 'BlogEntry',
   computed: {
     theDate() {
-      return isValid(this.$page.frontmatter.when)
-        ? format(parseISO(this.$page.frontmatter.when), 'dd/MM/yyyy')
-        : '';
+      const parsedWhen = parseISO(this.$page.frontmatter.when);
+      return isValid(parsedWhen) ? format(parsedWhen, 'dd/MM/yyyy') : '';
     },
     twitterLink() {
       const url = `http://www.andreacanton.com${this.$page.path}`;

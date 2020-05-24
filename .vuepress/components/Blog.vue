@@ -11,7 +11,7 @@
   </div>
 </template>
 <script>
-import { format, formatDistanceToNow, parseISO } from 'date-fns';
+import { isValid, format, formatDistanceToNow, parseISO } from 'date-fns';
 import { it } from 'date-fns/locale';
 
 export default {
@@ -23,6 +23,7 @@ export default {
           /^\/blog\/.+$/.test(p.path) &&
           p.title &&
           p.frontmatter.when &&
+          isValid(parseISO(p.frontmatter.when)) &&
           !p.frontmatter.draft
       );
       return blogPages;
@@ -30,12 +31,16 @@ export default {
   },
   filters: {
     distanceDate(value) {
-      return formatDistanceToNow(parseISO(value), { locale: it });
+      const parsedValue = parseISO(value);
+      return isValid(parsedValue)
+        ? formatDistanceToNow(parsedValue, { locale: it })
+        : value;
     },
   },
   methods: {
     formatDate(value) {
-      return format(parseISO(value), 'dd-MM-yyyy');
+      const parsedValue = parseISO(value);
+      return isValid(parsedValue) ? format(parsedValue, 'dd-MM-yyyy') : value;
     },
   },
 };
