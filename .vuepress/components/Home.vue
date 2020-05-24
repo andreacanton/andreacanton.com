@@ -75,15 +75,6 @@ export default {
       }
     },
   },
-  mounted: function() {
-    this.$nextTick(() => {
-      this.repositionPhoto();
-      window.addEventListener('resize', this.repositionPhoto);
-    });
-  },
-  beforeDestroy: function() {
-    window.removeEventListener('resize', this.repositionPhoto);
-  },
 };
 </script>
 <style lang="stylus" scoped>
