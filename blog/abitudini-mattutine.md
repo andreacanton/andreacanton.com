@@ -1,6 +1,7 @@
 ---
 when: 2020-02-14
 title: Come ho cominciato ad avere delle buone abitudini mattutine
+draft: true
 ---
 
 Fino ad agosto 2019 mi alzavo intorno alle 8:40, facevo colazione in macchina con una crostatina e bevevo un caffè quando arrivavo in ufficio alle 9:05. Risultato: bruciori di stomaco e briciole per tutta la macchina.

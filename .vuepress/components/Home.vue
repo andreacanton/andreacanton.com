@@ -30,11 +30,12 @@
       </ul>
     </nav>
     <picture>
-      <img src="/images/me.jpg" alt="Andrea Canton Web Developer" />
+      <img src="/images/me.jpg" ref="me" alt="Andrea Canton Web Developer" />
     </picture>
   </div>
 </template>
 <script>
+import { isValid, parseISO } from 'date-fns';
 import Icon from './Icon';
 export default {
   components: {
@@ -47,10 +48,40 @@ export default {
           /^\/blog\/.+$/.test(p.path) &&
           p.title &&
           p.frontmatter.when &&
+          isValid(parseISO(p.frontmatter.when)) &&
           !p.frontmatter.draft
       );
       return blogPages.length > 0;
     },
+  },
+  methods: {
+    repositionPhoto() {
+      const me = this.$refs.me;
+      const bodyHeight = document.querySelector('body').offsetHeight;
+      const vh = Math.max(
+        document.documentElement.clientHeight || 0,
+        window.innerHeight || 0
+      );
+      const vw = Math.max(
+        document.documentElement.clientWidth || 0,
+        window.innerWidth || 0
+      );
+      if (vh - bodyHeight < 0) {
+        me.style = 'position: relative';
+      } else {
+        me.style = `position: absolute; bottom: 0; left: ${(vw -
+          me.offsetWidth) /
+          2}px`;
+      }
+    },
+  },
+  created: function() {
+    window.addEventListener('load', this.repositionPhoto);
+    window.addEventListener('resize', this.repositionPhoto);
+  },
+  destroyed: function() {
+    window.removeEventListener('load', this.repositionPhoto);
+    window.removeEventListener('resize', this.repositionPhoto);
   },
 };
 </script>
@@ -58,11 +89,13 @@ export default {
 .home
   text-align center
 h1
-  font-size 70px
+  padding-top 100px
+  margin-top 0
+  font-size 42px
   font-family 'Rubik', sans-serif;
 
 .summary
-  font-size 30px
+  font-size 20px
   font-family 'JetBrains Mono'
   margin-bottom: 2em;
   h2
@@ -100,4 +133,9 @@ nav
 picture
   img
     width 100%
+@media screen and (min-width: 620px)
+  h1
+    font-size 70px
+  .summary
+    font-size 30px
 </style>
