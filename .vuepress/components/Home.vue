@@ -66,8 +66,8 @@ export default {
         document.documentElement.clientWidth || 0,
         window.innerWidth || 0
       );
-      if (vh - bodyHeight < 0) {
-        me.style = 'position: relative';
+      if (vh - bodyHeight > 0) {
+        me.style = null;
       } else {
         me.style = `position: absolute; bottom: 0; left: ${(vw -
           me.offsetWidth) /
@@ -75,12 +75,13 @@ export default {
       }
     },
   },
-  created: function() {
-    window.addEventListener('load', this.repositionPhoto);
-    window.addEventListener('resize', this.repositionPhoto);
+  mounted: function() {
+    this.$nextTick(() => {
+      this.repositionPhoto();
+      window.addEventListener('resize', this.repositionPhoto);
+    });
   },
-  destroyed: function() {
-    window.removeEventListener('load', this.repositionPhoto);
+  beforeDestroy: function() {
     window.removeEventListener('resize', this.repositionPhoto);
   },
 };
@@ -132,10 +133,13 @@ nav
           color: $darkTextColor
 picture
   img
-    width 100%
+    width: calc(100% - 10px);
 @media screen and (min-width: 620px)
   h1
     font-size 70px
   .summary
     font-size 30px
+  picture
+    img
+      width: 100%;
 </style>

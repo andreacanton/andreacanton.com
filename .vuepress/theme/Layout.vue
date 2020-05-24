@@ -43,11 +43,11 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .container
-  width auto
   padding 0 10px
 @media screen and (min-width: 620px)
   .container
     width 600px
+    padding 0
     margin 0 auto
 
 footer
