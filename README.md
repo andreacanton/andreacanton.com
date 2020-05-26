@@ -1,5 +1,5 @@
 ---
-title: Andrea Canton - Full-stack Web Developer
+metaTitle: Andrea Canton - Full-stack Web Developer
 description: Website of Andrea Canton a veggie web developer based in Verona
 ---
 
