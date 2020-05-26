@@ -30,3 +30,16 @@ a.no-effects, h1 a, h2 a
   background none
   &:hover
     background none
+
+h1, h2, h3, h4, h5, h6
+  position relative
+  &:hover
+    .header-anchor
+      color $accent
+.header-anchor
+  display inline-block
+  width 1.2em
+  position absolute
+  left -1.2em
+  top -3px
+  color $backgroundColor

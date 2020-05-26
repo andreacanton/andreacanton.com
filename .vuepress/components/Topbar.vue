@@ -67,4 +67,8 @@ nav
     padding 0
     li
       margin 0 15px
+@media screen and (min-width: 620px)
+  header
+    flex-direction row
+    justify-content space-between
 </style>
