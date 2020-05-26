@@ -31,4 +31,4 @@ Quindi esperienze come questa ti fanno vedere le cose di tutti i giorni con occh
 
 Spero di averti incuriosit\*. 5 euro.
 
-Poi [lo do in beneficenza](http://www.rondadellacaritaverona.org/donare-beneficenza-verona/), cosa credi!
+Poi [li do in beneficenza](http://www.rondadellacaritaverona.org/donare-beneficenza-verona/), cosa credi!
