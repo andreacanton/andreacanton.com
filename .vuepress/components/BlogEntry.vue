@@ -4,12 +4,13 @@
     <h1>{{ $page.title }}</h1>
     <Content />
     <footer>
-      Ti ringrazio per aver dedicato del tempo per leggere una parte della mia
-      opinione sulla vita, l'universo e tutto quanto. Se ti sembra che abbia
-      detto qualcosa di sbagliato, o vuoi semplicemente dire la tua verità,
-      <a :href="twitterLink">fammelo sapere con un tweet</a>.
-      <!-- Se hai ancora voglia di starmi ad ascoltare,
-      puoi <a href="/blog/">leggere altri articoli</a>. -->
+      <p>
+        Ti ringrazio per aver dedicato del tempo per leggere una parte della mia
+        opinione sulla vita, l'universo e tutto quanto. Se ti sembra che abbia
+        detto qualcosa di sbagliato, o vuoi semplicemente dire la tua verità,
+        <a :href="twitterLink">fammelo sapere con un tweet</a>. Ok dai, puoi
+        <a href="/blog/">leggere altri articoli</a>.
+      </p>
     </footer>
   </section>
 </template>
