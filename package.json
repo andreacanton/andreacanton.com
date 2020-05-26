@@ -22,7 +22,8 @@
     },
     "homepage": "https://github.com/andreacanton/andreacanton.com#readme",
     "devDependencies": {
-        "vuepress": "^1.4.1"
+        "vuepress": "^1.4.1",
+        "vuepress-plugin-container": "^2.1.4"
     },
     "dependencies": {
         "date-fns": "^2.14.0",

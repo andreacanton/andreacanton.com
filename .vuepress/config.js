@@ -40,4 +40,13 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     ],
   ],
+  plugins: [
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'update',
+        defaultTitle: 'UPDATE',
+      },
+    ],
+  ],
 };
