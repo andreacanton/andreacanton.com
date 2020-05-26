@@ -13,13 +13,13 @@ La mattina, appunto.
 
 Quindi ho cominciato ad avere una motivazione in più per svegliarmi prima e fare colazione a casa. Soprattutto perché il pane dopo un po’ di volte che lo fai, viene proprio buono e la soddisfazione di mangiarlo è indescrivibile!
 
-All'inizio è stata dura perché le prime volte facevo colazione di fretta e non me la godevo molto, ma dopo qualche settimana ho fatto mia questa abitudine. Recentemente ho anche iniziato a farmi una spremuta (che fa bene d'inverno) da abbinare al pane e marmellata. Alcune volte mi sveglio abbastanza presto per fare un po’ di cazzeggio su YouTube o leggere. Insomma mi sembra di farlo da anni da quanto sono abituato.
+All'inizio è stata dura perché le prime volte facevo colazione di fretta e non me la godevo molto, ma dopo qualche settimana ho fatto mia questa abitudine. Recentemente ho anche iniziato a farmi una spremuta — che d'inverno ci sta tutta — da abbinare al pane e marmellata. Alcune volte mi sveglio abbastanza presto per fare un po’ di cazzeggio su YouTube o leggere. Insomma mi sembra di farlo da anni da quanto sono abituato.
 
 Da un paio d'anni ho cominciato ad andare in palestra, alla sera dopo lavoro, due-tre volte a settimana. Lo ammetto, più due che tre. l'ho iniziata principalmente per buttare giù la pancia e raddrizzarmi con la schiena, o più semplicemente per fare attività fisica regolare.
 Inoltre avevo un'altra convinzione: che mi avrebbe stancato e mi avrebbe fatto dormire meglio. Non è così assolutamente, anzi. Fare attività fisica alla sera ti sveglia! Infatti spesso mi addormentavo a mezzanotte/l'una per svegliarmi più stanco di prima.
 
 Sto ancora andando in palestra, ma sto cercando di prendere l'abitudine di fare esercizio fisico alla mattina e smettere di andare in palestra alla sera. Dieci minuti di esercizio fisico o yoga, tutti i giorni.
-YouTube è pieno di video per esercizi mattutini ve ne porto un po’ qui un paio che ho provato e sono fatti bene.
+YouTube è pieno di video per esercizi mattutini te ne elenco qui un paio che ho provato e sono fatti bene.
 
 - [Workout di 10 minuti](https://www.youtube.com/watch?v=3sEeVJEXTfY)
 - [Yoga stretch di 10 minuti](https://www.youtube.com/watch?v=3sEeVJEXTfY)
@@ -28,16 +28,20 @@ YouTube è pieno di video per esercizi mattutini ve ne porto un po’ qui un pai
 
 Ora quando riesco a svegliarmi per le 7:30, faccio esercizio e sono più concentrato a lavoro e arrivo a sera bello stanco, alle 22:30/23:00 appoggio la testa sul cuscino, parto e ci si rivede a mattina.
 
-Per ora riesco a farcela sempre, ma punto di arrivare ad aprile che ho preso questa nuova abitudine, così non rinnovo la palestra.
+Per ora riesco a farcela sempre, ma punto di arrivare ad aprile che ho preso questa nuova abitudine, così non rinnovo la palestra. Speriamo!
+
+::: update
+Fa ridere leggere questa cosa sapendo che dopo qualche mese è arrivato il COVID-19 e la palestra non l'ho rinnovata comunque :sweat_smile:
+:::
 
 ## Conclusioni
 
 Se vuoi cercare di avere delle buone abitudini mattutine prima di tutto devi volerlo, ma ti riporto alcuni consigli che mi sono stati utili per farcela.
 
-- Non cercare di andare a letto presto, cerca di svegliarti prima del solito, il sonno alla sera arriverà da solo.
+- Non cercare di andare a letto presto, piuttosto cerca di svegliarti presto, il sonno alla sera arriverà da solo.
 - Trova una cosa che ti piace e ti stimoli a svegliarti prima. Come una buona colazione, lavorare su un progetto che ti piace o anche guardare una serie tv, va bene qualsiasi cosa per incentivarti.
-- Almeno mezzora prima di dormire cerca di non guardare schermi, piuttosto cerca di leggere un buon libro.
+- Almeno mezzora prima di dormire cerca di non guardare schermi, piuttosto leggi.
 - Cerca di non fare attività fisica alla sera.
-- Sforzati a mantenere la tua routine mattutina anche nel weekend.
+- Sforzati a mantenere la routine mattutina anche nel weekend.
 
-Non mi ritengo un esperto, ma spero che la mia esperienza possa esserti stata d'aiuto.
+Spero che la mia esperienza possa esserti stata d'aiuto. Fanno 5 euro.
