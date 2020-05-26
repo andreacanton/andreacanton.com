@@ -104,6 +104,7 @@ nav
     display flex
     justify-content center
     align-items center
+    padding 0
     li
       margin 0 15px
       a.blog

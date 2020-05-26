@@ -1,7 +1,6 @@
 ---
 when: 2020-02-14
 title: Come ho cominciato ad avere delle buone abitudini mattutine
-draft: true
 ---
 
 Fino ad agosto 2019 mi alzavo intorno alle 8:40, facevo colazione in macchina con una crostatina e bevevo un caffè quando arrivavo in ufficio alle 9:05. Risultato: bruciori di stomaco e briciole per tutta la macchina.
@@ -33,10 +32,12 @@ Non riesco sempre ancora, ma punto di arrivare ad aprile che ho preso questa nuo
 
 ## Conclusioni
 
-Se vuoi cercare di avere delle buone abitudini mattutine ecco alcuni consigli che mi sono stati utili.
+Se vuoi cercare di avere delle buone abitudini mattutine prima di tutto devi volerlo, ma ti riporto alcuni consigli che mi sono stati utili per farcela.
 
 - Non cercare di andare a letto presto, cerca di svegliarti prima del solito, il sonno alla sera arriverà da solo.
 - Trova una cosa che ti piace e ti stimoli a svegliarti prima. Come una buona colazione, lavorare su un progetto che ti piace o anche guardare una serie tv, va bene qualsiasi cosa per incentivarti.
-- Cerca di leggere almeno mezzora prima di andare a letto, non guardare nessuno schermo aiuta ad addormentarti più facilmente.
+- Almeno mezzora prima di dormire cerca di non guardare schermi, piuttosto cerca di leggere un buon libro.
 - Cerca di non fare attività fisica alla sera.
-- Cerca di mantenere l'abitudine anche nel weekend.
+- Sforzati a mantenere la tua routine mattutina anche nel weekend.
+
+Non mi ritengo un esperto, ma spero che la mia esperienza possa esserti stata d'aiuto.

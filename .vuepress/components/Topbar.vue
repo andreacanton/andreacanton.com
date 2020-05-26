@@ -35,10 +35,11 @@ export default {
 <style lang="stylus" scoped>
 header
   padding 10px 0
-  display flex
-  align-items center
-  justify-content space-between
   margin-bottom 20px
+  display flex
+  flex-direction column
+  align-items center
+
 picture
   img
     border-radius 50%
@@ -63,6 +64,7 @@ nav
     display flex
     justify-content center
     align-items center
+    padding 0
     li
       margin 0 15px
 </style>
