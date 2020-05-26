@@ -1,8 +1,11 @@
 <template>
   <div>
     <div class="blog-entry" v-for="entry in blogPages">
-      <div class="when" :title="formatDate(entry.frontmatter.when)">
-        pubblicato {{ entry.frontmatter.when | distanceDate }} fa
+      <div
+        class="when"
+        :title="`ben ${distanceDate(entry.frontmatter.when)} fa`"
+      >
+        {{ entry.frontmatter.when | longDate }}
       </div>
       <h2>
         <a :href="entry.path">{{ entry.title }}</a>
@@ -11,7 +14,13 @@
   </div>
 </template>
 <script>
-import { isValid, format, formatDistanceToNow, parseISO } from 'date-fns';
+import {
+  isValid,
+  format,
+  formatDistanceToNow,
+  parseISO,
+  compareDesc,
+} from 'date-fns';
 import { it } from 'date-fns/locale';
 
 export default {
@@ -26,21 +35,28 @@ export default {
           isValid(parseISO(p.frontmatter.when)) &&
           !p.frontmatter.draft
       );
+      blogPages.sort((a, b) => {
+        const aDate = parseISO(a.frontmatter.when);
+        const bDate = parseISO(b.frontmatter.when);
+        return compareDesc(aDate, bDate);
+      });
       return blogPages;
     },
   },
   filters: {
+    longDate(value) {
+      const parsedValue = parseISO(value);
+      return isValid(parsedValue)
+        ? format(parsedValue, 'dd/MM/yyyy', { locale: it })
+        : value;
+    },
+  },
+  methods: {
     distanceDate(value) {
       const parsedValue = parseISO(value);
       return isValid(parsedValue)
         ? formatDistanceToNow(parsedValue, { locale: it })
         : value;
-    },
-  },
-  methods: {
-    formatDate(value) {
-      const parsedValue = parseISO(value);
-      return isValid(parsedValue) ? format(parsedValue, 'dd-MM-yyyy') : value;
     },
   },
 };
@@ -50,6 +66,7 @@ export default {
     font-family 'JetBrains Mono'
     .when
       cursor help
+      font-size .8rem
     h2
       font-size 35px
       margin-top 0
