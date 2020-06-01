@@ -4,7 +4,7 @@ when: 2020-05-24
 draft: true
 ---
 
-Ho iniziato questo percorso pensando di non avere un grosso problema con l'uso dei social network. Ma utilmamente mi corico a letto guardando il telefono, addormentandomi tardi e svegliandomi male, intaccando i [miei buoni propositi delle abitudini mattutine](/blog/abitudini-mattutine.html).
+Ho iniziato questo percorso pensando di non avere un grosso problema con l'uso dei social network. Ma utilmamente mi corico a letto guardando il telefono, addormentandomi tardi e svegliandomi male, intaccando i [miei buoni propositi sulle abitudini mattutine](/blog/abitudini-mattutine.html).
 Mi sono imbattuto in un paio di video interessanti su youtube
 
 https://www.youtube.com/watch?v=ve37Bg4-hPc
@@ -12,21 +12,37 @@ https://www.youtube.com/watch?v=cNFdjP_F9sU
 
 ## Le regole
 
-Il periodo che ho deciso è dal 24 maggio al 24 giugno 2020.
+Il periodo che ho deciso è dal 25 maggio al 25 giugno 2020.
 
 Non potrò accedere alle seguenti applicazioni/siti:
 
 - Facebook
 - Instagram
 - Twitter
-- Linkedin
+- LinkedIn
 - 9gag: non è propriamente un social, ma ha lo stesso paradigma di contenuti scrollabili infiniti
 - Reddit
-- (?)
 
-Youtube posso guardarlo solo mentre mangio.
-Prima di andare a letto, metto il telefono in modalità aereo e la disattivo dopo la colazione del giorno seguente.
+Aggiungo anche due punti facoltativi - #NiceToHave:
 
-## Giorno 0
+- YouTube posso guardarlo solo mentre mangio.
+- Prima di andare a letto, metto il telefono in modalità aereo e la disattivo dopo aver fatto colazione il giorno seguente.
 
-La prima cosa che ho fatto è stato disinstallare dal mio telefono tutte le app dei social network. E visto che ero di pulizie, ho disinstallato un altro bel po' di applicazioni che non usavo da tempo. Ho riorganizzato il la home del mio telefono per sembrare qualcosa di carino mettendo le cose
+Cosa è consentito:
+
+- Vedere screenshot di post
+- Vedere video nella preview di Telegram o di Facebook Messenger
+
+Il punto è non cadere nella trappola del contenuto infinito, ma evitare i contenuti che ti gira la gente mi sembra eccessivo e inutile ai fini del mio esperimento.
+
+## Week 1 - Craving
+
+La prima cosa che ho fatto è stato disinstallare dal mio telefono tutte le app di social network. Visto che ero di pulizie, ho disinstallato un altro bel po' di applicazioni che non usavo da tempo - e vai di minimalismo!
+
+La prima settimana è cominciata piuttosto bene, lunedì e martedì non ho sentito minimamente l'esigenza di andare su facebook o simili. Mercoledì invece, sarà stata la giornata uggiosa, ero un po' più annoiato del solito e mi è capitato un paio di volte di scrivere nella barra degli indirizzi facebook.com e premere invio senza pensare. È successo qualche altra volta, ma fortunatamente tutte le volte chiudevo la finestra prima che caricasse qualcosa.
+
+Un altra cosa degna di nota è che i miei amici più stretti e qualche mio collega mi hanno girato dei link a post di facebook e instagram e puntualmente spiegavo la situazione e chiedevo uno screenshot.
+
+Ho comunque cercato di non avere paura di annoiarmi e di non stare attaccato al telefono, ma anche semplicemente stare sul divano a fissare il soffitto. Una specie di meditazione a occhi aperti.
+
+https://time.com/5480002/benefits-of-boredom/
