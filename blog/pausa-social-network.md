@@ -5,10 +5,14 @@ draft: true
 ---
 
 Ho iniziato questo percorso pensando di non avere un grosso problema con l'uso dei social network. Ma utilmamente mi corico a letto guardando il telefono, addormentandomi tardi e svegliandomi male, intaccando i [miei buoni propositi sulle abitudini mattutine](/blog/abitudini-mattutine.html).
-Mi sono imbattuto in un paio di video interessanti su youtube
+Mi sono imbattuto in un paio di video interessanti su YouTube
 
 https://www.youtube.com/watch?v=ve37Bg4-hPc
 https://www.youtube.com/watch?v=cNFdjP_F9sU
+
+Un mio caro vecchio collega mi ha fatto notare una volta che il gesto di scroll con il dito sul telefono è un gesto che non facevamo così spesso prima dell'arrivo degli smartphone
+
+--- GIF TELEFONO CHE SCROLLA ---
 
 ## Le regole
 
@@ -20,7 +24,7 @@ Non potrò accedere alle seguenti applicazioni/siti:
 - Instagram
 - Twitter
 - LinkedIn
-- 9gag: non è propriamente un social, ma ha lo stesso paradigma di contenuti scrollabili infiniti
+- 9gag: non è propriamente un social, ma ha lo stesso paradigma di contenuti infiniti
 - Reddit
 
 Aggiungo anche due punti facoltativi - #NiceToHave:
