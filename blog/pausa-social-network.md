@@ -50,3 +50,4 @@ Un altra cosa degna di nota è che i miei amici più stretti e qualche mio colle
 Ho comunque cercato di non avere paura di annoiarmi e di non stare attaccato al telefono, ma anche semplicemente stare sul divano a fissare il soffitto. Una specie di meditazione a occhi aperti.
 
 https://time.com/5480002/benefits-of-boredom/
+https://qz.com/1020976/the-scientific-link-between-boredom-and-creativity/
