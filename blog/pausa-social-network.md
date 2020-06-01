@@ -4,7 +4,7 @@ when: 2020-05-24
 draft: true
 ---
 
-Ho iniziato questo percorso pensando di non avere un grosso problema con l'uso dei social network. Ma utilmamente mi corico a letto guardando il telefono, addormentandomi tardi e svegliandomi male, intaccando i [miei buoni propositi sulle abitudini mattutine](/blog/abitudini-mattutine.html).
+Ho iniziato questo percorso pensando di non avere un grosso problema con l'uso dei social network. Ma ultimamente mi corico a letto guardando il telefono, addormentandomi tardi e svegliandomi male, intaccando i [miei buoni propositi sulle abitudini mattutine](/blog/abitudini-mattutine.html).
 Mi sono imbattuto in un paio di video interessanti su YouTube
 
 https://www.youtube.com/watch?v=ve37Bg4-hPc
