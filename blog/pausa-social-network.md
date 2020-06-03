@@ -51,3 +51,10 @@ Ho comunque cercato di non avere paura di annoiarmi e di non stare attaccato al 
 
 https://time.com/5480002/benefits-of-boredom/
 https://qz.com/1020976/the-scientific-link-between-boredom-and-creativity/
+
+Non so se è stato questo, o semplicemente perché ero nel mood "smetti di cazzeggiare", ma ho fatto un sacco di cose belle anche nel weekend: ho invasato un po' di piantine da ortaggi in terrazzo e ho pure sistemato il mio armadio buttando/donando un sacco di vestiti!
+
+--- GIF DAI DAI DAI ---
+
+What's next?
+Penso che proverò a non usare cose con schermi retro illuminati dopo le 7.30, ma magari tra un po'. La vita va vissuta
