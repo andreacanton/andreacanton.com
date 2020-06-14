@@ -27,6 +27,7 @@
     },
     "dependencies": {
         "date-fns": "^2.14.0",
-        "normalize-styl": "^4.1.1"
+        "normalize-styl": "^4.1.1",
+        "vuepress-plugin-sitemap": "^2.3.1"
     }
 }

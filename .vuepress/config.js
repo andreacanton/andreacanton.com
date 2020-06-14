@@ -48,5 +48,12 @@ module.exports = {
         defaultTitle: 'UPDATE',
       },
     ],
+    [
+      'sitemap',
+      {
+        hostname: 'https://andreacanton.dev',
+        exclude: [ '/404.html' ]
+      }
+    ] 
   ],
 };
