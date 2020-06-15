@@ -2,10 +2,10 @@
   <div>
     <div class="blog-entry" v-for="entry in blogPages">
       <div
-        class="when"
-        :title="`ben ${distanceDate(entry.frontmatter.when)} fa`"
+        class="date"
+        :title="`ben ${distanceDate(entry.frontmatter.date)} fa`"
       >
-        {{ entry.frontmatter.when | longDate }}
+        {{ entry.frontmatter.date | longDate }}
       </div>
       <h2>
         <a :href="entry.path">{{ entry.title }}</a>
@@ -31,13 +31,13 @@ export default {
         p =>
           /^\/blog\/.+$/.test(p.path) &&
           p.title &&
-          p.frontmatter.when &&
-          isValid(parseISO(p.frontmatter.when)) &&
+          p.frontmatter.date &&
+          isValid(parseISO(p.frontmatter.date)) &&
           !p.frontmatter.draft
       );
       blogPages.sort((a, b) => {
-        const aDate = parseISO(a.frontmatter.when);
-        const bDate = parseISO(b.frontmatter.when);
+        const aDate = parseISO(a.frontmatter.date);
+        const bDate = parseISO(b.frontmatter.date);
         return compareDesc(aDate, bDate);
       });
       return blogPages;
@@ -64,7 +64,7 @@ export default {
 <style lang="stylus" scoped>
 .blog-entry
     font-family 'JetBrains Mono'
-    .when
+    .date
       cursor help
       font-size .8rem
     h2

@@ -1,6 +1,6 @@
 ---
+date: 2020-02-18
 title: Perché ho iniziato a fare volontariato
-when: 2020-02-18
 ---
 
 Da circa un mese sto facendo volontariato con la [Ronda della carità di Verona](http://www.rondadellacaritaverona.org/). Ho fatto solo cinque uscite di prova, ma sento di poterti raccontare già qualcosa.

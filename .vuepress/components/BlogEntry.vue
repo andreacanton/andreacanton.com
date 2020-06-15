@@ -1,6 +1,6 @@
 <template>
   <section class="single-entry">
-    <div class="when">{{ theDate }}</div>
+    <div class="date">{{ theDate }}</div>
     <h1>{{ $page.title }}</h1>
     <Content />
     <footer>
@@ -21,8 +21,8 @@ export default {
   name: 'BlogEntry',
   computed: {
     theDate() {
-      const parsedWhen = parseISO(this.$page.frontmatter.when);
-      return isValid(parsedWhen) ? format(parsedWhen, 'dd/MM/yyyy') : '';
+      const parsedDate = parseISO(this.$page.frontmatter.date);
+      return isValid(parsedDate) ? format(parsedDate, 'dd/MM/yyyy') : '';
     },
     twitterLink() {
       const url = `http://www.andreacanton.com${this.$page.path}`;
@@ -33,7 +33,7 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
-.when, footer
+.date, footer
   font-family 'JetBrains Mono', monospace
 footer
   padding 20px 0

@@ -47,8 +47,8 @@ export default {
         p =>
           /^\/blog\/.+$/.test(p.path) &&
           p.title &&
-          p.frontmatter.when &&
-          isValid(parseISO(p.frontmatter.when)) &&
+          p.frontmatter.date &&
+          isValid(parseISO(p.frontmatter.date)) &&
           !p.frontmatter.draft
       );
       return blogPages.length > 0;
