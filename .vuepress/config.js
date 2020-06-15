@@ -78,6 +78,7 @@ module.exports = (themeConfig, ctx) => {
           },
         },
       ],
+      ['vuepress-plugin-reading-time'],
     ],
   };
 };

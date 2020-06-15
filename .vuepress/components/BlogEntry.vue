@@ -1,6 +1,6 @@
 <template>
   <section class="single-entry">
-    <div class="date">{{ theDate }}</div>
+    <div class="meta"><BlogEntryMeta :thePage="this.$page" /></div>
     <h1>{{ $page.title }}</h1>
     <Content />
     <footer>
@@ -19,8 +19,10 @@
 </template>
 <script>
 import { isValid, format, parseISO, parse } from 'date-fns';
+import BlogEntryMeta from './BlogEntryMeta';
 export default {
   name: 'BlogEntry',
+  components: { BlogEntryMeta },
   computed: {
     theDate() {
       const parsedDate = parseISO(this.$page.frontmatter.date);
@@ -35,7 +37,7 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
-.date, footer
+.meta, footer
   font-family 'JetBrains Mono', monospace
 footer
   padding 20px 0

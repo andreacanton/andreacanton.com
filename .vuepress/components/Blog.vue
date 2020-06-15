@@ -1,11 +1,8 @@
 <template>
   <div>
     <div class="blog-entry" v-for="entry in blogPages">
-      <div
-        class="date"
-        :title="`ben ${distanceDate(entry.frontmatter.date)} fa`"
-      >
-        {{ entry.frontmatter.date | longDate }}
+      <div class="meta">
+        <BlogEntryMeta :thePage="entry" />
       </div>
       <h2>
         <a :href="entry.path">{{ entry.title }}</a>
@@ -22,9 +19,11 @@ import {
   compareDesc,
 } from 'date-fns';
 import { it } from 'date-fns/locale';
+import BlogEntryMeta from './BlogEntryMeta';
 
 export default {
   name: 'Blog',
+  components: { BlogEntryMeta },
   computed: {
     blogPages() {
       const blogPages = this.$site.pages.filter(
@@ -43,29 +42,12 @@ export default {
       return blogPages;
     },
   },
-  filters: {
-    longDate(value) {
-      const parsedValue = parseISO(value);
-      return isValid(parsedValue)
-        ? format(parsedValue, 'dd/MM/yyyy', { locale: it })
-        : value;
-    },
-  },
-  methods: {
-    distanceDate(value) {
-      const parsedValue = parseISO(value);
-      return isValid(parsedValue)
-        ? formatDistanceToNow(parsedValue, { locale: it })
-        : value;
-    },
-  },
 };
 </script>
 <style lang="stylus" scoped>
 .blog-entry
     font-family 'JetBrains Mono'
-    .date
-      cursor help
+    .meta
       font-size .8rem
     h2
       font-size 35px
