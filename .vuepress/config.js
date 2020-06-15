@@ -49,11 +49,18 @@ module.exports = {
       },
     ],
     [
+      'vuepress-plugin-container',
+      {
+        type: 'tip',
+        defaultTitle: 'TIP',
+      },
+    ],
+    [
       'sitemap',
       {
         hostname: 'https://andreacanton.dev',
-        exclude: [ '/404.html' ]
-      }
-    ] 
+        exclude: ['/404.html'],
+      },
+    ],
   ],
 };
