@@ -39,14 +39,11 @@ Cosa è consentito:
 
 Il punto è non cadere nella trappola del contenuto infinito, ma evitare i contenuti che ti gira la gente mi sembra eccessivo e inutile ai fini del mio esperimento.
 
-## Week 1 - Craving
-
 La prima cosa che ho fatto è stato disinstallare dal mio telefono tutte le app di social network. Visto che ero di pulizie, ho disinstallato un altro bel po' di applicazioni che non usavo da tempo - e vai di minimalismo!
 
----tip
-Una cosa che ho fatto a sfida avviata - verso la terza settimana - è stato entrare su Facebook e Twitter da PC e disconnettermi. Così se cercassi di entrare dovrei fare uno step ulteriore.
-
----
+::: tip
+Un consiglio utile, che ho scoperto solo a sfida avviata, è quello entrare su Facebook e Twitter da PC e disconnettersi. Così, se cercassi di entrare, dovresti fare uno step ulteriore.
+:::
 
 La prima settimana è cominciata piuttosto bene, lunedì e martedì non ho sentito minimamente l'esigenza di andare su facebook o simili. Mercoledì invece, sarà stata la giornata uggiosa, ero un po' più annoiato del solito e mi è capitato un paio di volte di scrivere nella barra degli indirizzi facebook.com e premere invio senza pensare. È successo qualche altra volta, ma fortunatamente tutte le volte chiudevo la finestra prima che caricasse qualcosa.
 
