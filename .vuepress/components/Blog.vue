@@ -1,5 +1,21 @@
 <template>
   <div>
+    <p class="intro">
+      Benvenut* nel mio blog! Qui pubblico articoli su quello che faccio, che mi
+      succede o che penso. Spesso una combinazione delle tre. Dai un occhiata in
+      giro e se vuoi contattarmi per dirmi la tua mi trovi su
+      <a
+        href="https://twitter.com/andreacanton"
+        title="Profilo twitter di Andrea Canton"
+        >Twitter</a
+      >.<br />Se invece ti interessano argomenti da sviluppatori software
+      seguimi su
+      <a
+        href="https://dev.to/andreacanton"
+        title="Dev.to profile of Andrea Canton"
+        >DEV</a
+      >.
+    </p>
     <div class="blog-entry" v-for="entry in blogPages">
       <div class="meta">
         <BlogEntryMeta :thePage="entry" />
@@ -45,6 +61,9 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
+.intro
+  font-size 1.5em
+  margin 1.5em 0
 .blog-entry
     font-family 'JetBrains Mono'
     .meta
