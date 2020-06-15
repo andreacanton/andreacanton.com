@@ -11,12 +11,14 @@
         <a :href="twitterLink">fammelo sapere con un tweet</a>. Ok dai, puoi
         <a href="/blog/">leggere altri articoli</a>.
       </p>
+      <p class="last-update">
+        Ultimo aggiornamento: {{ this.$page.lastUpdated }}
+      </p>
     </footer>
   </section>
 </template>
 <script>
-import { isValid, format, parseISO } from 'date-fns';
-import { it } from 'date-fns/locale';
+import { isValid, format, parseISO, parse } from 'date-fns';
 export default {
   name: 'BlogEntry',
   computed: {
@@ -37,4 +39,7 @@ export default {
   font-family 'JetBrains Mono', monospace
 footer
   padding 20px 0
+  .last-update
+    text-align right
+    font-size 0.7em
 </style>
