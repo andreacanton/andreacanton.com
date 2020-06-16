@@ -1,6 +1,6 @@
 <template>
   <section class="single-entry">
-    <div class="meta"><BlogEntryMeta :thePage="this.$page" /></div>
+    <BlogEntryMeta :thePage="this.$page" />
     <h1>{{ $page.title }}</h1>
     <Content />
     <footer>

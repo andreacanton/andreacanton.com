@@ -17,9 +17,7 @@
       >.
     </p>
     <div class="blog-entry" v-for="entry in blogPages">
-      <div class="meta">
-        <BlogEntryMeta :thePage="entry" />
-      </div>
+      <BlogEntryMeta :thePage="entry" />
       <h2>
         <a :href="entry.path">{{ entry.title }}</a>
       </h2>
@@ -63,14 +61,13 @@ export default {
 <style lang="stylus" scoped>
 .intro
   font-size 1.5em
-  margin 1.5em 0
+  margin 1.5em 0 3em
 .blog-entry
     font-family 'JetBrains Mono'
-    .meta
-      font-size .8rem
+    margin-bottom 3em
     h2
       font-size 35px
-      margin-top 0
+      margin 0
       a
         text-decoration none
         color $textColor
