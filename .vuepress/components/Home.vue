@@ -1,34 +1,36 @@
 <template>
   <div class="home">
-    <h1>Andrea Canton</h1>
-    <div class="summary">
-      <h2>Vegetarian web developer</h2>
-      <p>Based in Verona, Italy</p>
+    <div class="content">
+      <h1>Andrea Canton</h1>
+      <div class="summary">
+        <h2>Vegetarian web developer</h2>
+        <p>Based in Verona, Italy</p>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://twitter.com/andreacanton" class="no-effects">
+              <Icon name="twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/andreacanton" class="no-effects">
+              <Icon name="github" />
+            </a>
+          </li>
+          <li>
+            <a href="https://dev.to/andreacanton" class="no-effects">
+              <Icon name="devto" />
+            </a>
+          </li>
+          <li>
+            <a v-if="haveBlogEntries" href="/blog" class="blog">
+              blog
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li>
-          <a href="https://twitter.com/andreacanton" class="no-effects">
-            <Icon name="twitter" />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/andreacanton" class="no-effects">
-            <Icon name="github" />
-          </a>
-        </li>
-        <li>
-          <a href="https://dev.to/andreacanton" class="no-effects">
-            <Icon name="devto" />
-          </a>
-        </li>
-        <li>
-          <a v-if="haveBlogEntries" href="/blog" class="blog">
-            blog
-          </a>
-        </li>
-      </ul>
-    </nav>
     <picture>
       <img src="/images/me.jpg" ref="me" alt="Andrea Canton Web Developer" />
     </picture>
@@ -77,9 +79,17 @@ export default {
   },
 };
 </script>
+<style lang="stylus">
+html, body, .home, #app, .container
+  height 100%
+</style>
 <style lang="stylus" scoped>
 .home
   text-align center
+  display flex
+  flex-direction column
+.content 
+  flex 1 0 auto
 h1
   padding-top 100px
   margin-top 0
@@ -124,6 +134,7 @@ nav
           background-position 0px 100%
           color: $darkTextColor
 picture
+  flex-shrink 0
   img
     width: calc(100% - 10px);
 @media screen and (min-width: 620px)
