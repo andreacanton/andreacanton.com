@@ -68,16 +68,7 @@ module.exports = (themeConfig, ctx) => {
         },
       ],
       ['vuepress-plugin-seo'],
-      [
-        '@vuepress/last-updated',
-        {
-          transformer: (timestamp, lang) => {
-            const dateFns = require('date-fns');
-            const parsed = dateFns.parse(timestamp, 'T', new Date());
-            return dateFns.format(parsed, 'dd/MM/yyyy HH:mm:ss');
-          },
-        },
-      ],
+      ['@vuepress/last-updated'],
       ['vuepress-plugin-reading-time'],
     ],
   };
