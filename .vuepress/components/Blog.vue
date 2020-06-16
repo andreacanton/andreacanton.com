@@ -1,12 +1,23 @@
 <template>
   <div>
+    <p class="intro">
+      Benvenut* nel mio blog! Qui pubblico articoli su quello che faccio, che mi
+      succede o che penso. Spesso una combinazione delle tre. Dai un occhiata in
+      giro e se vuoi contattarmi per dirmi la tua mi trovi su
+      <a
+        href="https://twitter.com/andreacanton"
+        title="Profilo twitter di Andrea Canton"
+        >Twitter</a
+      >.<br />Se invece ti interessano argomenti da sviluppatori software
+      seguimi su
+      <a
+        href="https://dev.to/andreacanton"
+        title="Dev.to profile of Andrea Canton"
+        >DEV</a
+      >.
+    </p>
     <div class="blog-entry" v-for="entry in blogPages">
-      <div
-        class="when"
-        :title="`ben ${distanceDate(entry.frontmatter.when)} fa`"
-      >
-        {{ entry.frontmatter.when | longDate }}
-      </div>
+      <BlogEntryMeta :thePage="entry" />
       <h2>
         <a :href="entry.path">{{ entry.title }}</a>
       </h2>
@@ -22,54 +33,41 @@ import {
   compareDesc,
 } from 'date-fns';
 import { it } from 'date-fns/locale';
+import BlogEntryMeta from './BlogEntryMeta';
 
 export default {
   name: 'Blog',
+  components: { BlogEntryMeta },
   computed: {
     blogPages() {
       const blogPages = this.$site.pages.filter(
         p =>
           /^\/blog\/.+$/.test(p.path) &&
           p.title &&
-          p.frontmatter.when &&
-          isValid(parseISO(p.frontmatter.when)) &&
+          p.frontmatter.date &&
+          isValid(parseISO(p.frontmatter.date)) &&
           !p.frontmatter.draft
       );
       blogPages.sort((a, b) => {
-        const aDate = parseISO(a.frontmatter.when);
-        const bDate = parseISO(b.frontmatter.when);
+        const aDate = parseISO(a.frontmatter.date);
+        const bDate = parseISO(b.frontmatter.date);
         return compareDesc(aDate, bDate);
       });
       return blogPages;
     },
   },
-  filters: {
-    longDate(value) {
-      const parsedValue = parseISO(value);
-      return isValid(parsedValue)
-        ? format(parsedValue, 'dd/MM/yyyy', { locale: it })
-        : value;
-    },
-  },
-  methods: {
-    distanceDate(value) {
-      const parsedValue = parseISO(value);
-      return isValid(parsedValue)
-        ? formatDistanceToNow(parsedValue, { locale: it })
-        : value;
-    },
-  },
 };
 </script>
 <style lang="stylus" scoped>
+.intro
+  font-size 1.5em
+  margin 1.5em 0 3em
 .blog-entry
     font-family 'JetBrains Mono'
-    .when
-      cursor help
-      font-size .8rem
+    margin-bottom 3em
     h2
       font-size 35px
-      margin-top 0
+      margin 0
       a
         text-decoration none
         color $textColor

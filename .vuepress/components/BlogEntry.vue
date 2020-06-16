@@ -1,6 +1,6 @@
 <template>
   <section class="single-entry">
-    <div class="when">{{ theDate }}</div>
+    <BlogEntryMeta :thePage="this.$page" />
     <h1>{{ $page.title }}</h1>
     <Content />
     <footer>
@@ -11,30 +11,41 @@
         <a :href="twitterLink">fammelo sapere con un tweet</a>. Ok dai, puoi
         <a href="/blog/">leggere altri articoli</a>.
       </p>
+      <p class="last-update">Ultimo aggiornamento: {{ theLastUpdated }}</p>
     </footer>
   </section>
 </template>
 <script>
-import { isValid, format, parseISO } from 'date-fns';
-import { it } from 'date-fns/locale';
+import { isValid, format, parseISO, parse } from 'date-fns';
+import BlogEntryMeta from './BlogEntryMeta';
 export default {
   name: 'BlogEntry',
+  components: { BlogEntryMeta },
   computed: {
     theDate() {
-      const parsedWhen = parseISO(this.$page.frontmatter.when);
-      return isValid(parsedWhen) ? format(parsedWhen, 'dd/MM/yyyy') : '';
+      const parsedDate = parseISO(this.$page.frontmatter.date);
+      return isValid(parsedDate) ? format(parsedDate, 'dd/MM/yyyy') : '';
     },
     twitterLink() {
       const url = `http://www.andreacanton.com${this.$page.path}`;
       const text = `${url} via @andreacanton`;
       return `https://twitter.com/intent/tweet?text=${encodeURI(text)}`;
     },
+    theLastUpdated() {
+      const parsedDate = new Date(this.$page.lastUpdated);
+      console.log(parsedDate);
+      return isValid(parsedDate)
+        ? format(parsedDate, 'dd/MM/yyyy HH:mm:ss')
+        : this.$page.lastUpdated;
+    },
   },
 };
 </script>
 <style lang="stylus" scoped>
-.when, footer
+.meta, footer, .last-update
   font-family 'JetBrains Mono', monospace
 footer
   padding 20px 0
+.last-update
+  font-size 0.7em
 </style>

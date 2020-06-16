@@ -1,6 +1,6 @@
 ---
+date: 2020-05-24
 title: Ho messo in pausa i social network per un mese
-when: 2020-05-24
 draft: true
 ---
 
