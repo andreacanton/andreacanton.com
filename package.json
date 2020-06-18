@@ -1,6 +1,6 @@
 {
     "name": "andreacanton.com",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "The personal website of Andrea Canton an average human being, web developer, vegetarian based in Verona area, Italy EU.",
     "main": "index.js",
     "scripts": {

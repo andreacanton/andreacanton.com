@@ -60,13 +60,13 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .intro
-  font-size 1.5em
+  font-size 1.2em
   margin 1.5em 0 3em
 .blog-entry
     font-family 'JetBrains Mono'
     margin-bottom 3em
     h2
-      font-size 35px
+      font-size 1.8em
       margin 0
       a
         text-decoration none
