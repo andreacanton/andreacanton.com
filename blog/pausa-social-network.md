@@ -2,6 +2,8 @@
 date: 2020-06-26
 title: Ho messo in pausa i social network per un mese
 draft: true
+image: /posts/lazise.jpg
+tags: social, annoiarsi,
 ---
 
 Ho iniziato questo percorso pensando di non avere un grosso problema con l'uso dei social network. Ma ultimamente mi corico a letto guardando il telefono, addormentandomi tardi e svegliandomi male, intaccando i [miei buoni propositi sulle abitudini mattutine](/blog/abitudini-mattutine.html).

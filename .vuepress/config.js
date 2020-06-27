@@ -67,7 +67,20 @@ module.exports = (themeConfig, ctx) => {
           exclude: ['/404.html'],
         },
       ],
-      ['vuepress-plugin-seo'],
+      [
+        'vuepress-plugin-seo',
+        {
+          image: ($page, $site) => {
+            if ($page.frontmatter.image) {
+              return $site.themeConfig.domain &&
+                !$page.frontmatter.image.startsWith('http')
+                ? $site.themeConfig.domain + $page.frontmatter.image
+                : $page.frontmatter.image;
+            }
+            return '';
+          },
+        },
+      ],
       ['@vuepress/last-updated'],
       ['vuepress-plugin-reading-time'],
     ],
