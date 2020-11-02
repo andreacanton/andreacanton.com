@@ -2,7 +2,7 @@
   <div>
     <p class="intro">
       Benvenut* nel mio blog! Qui pubblico articoli su quello che faccio, che mi
-      succede o che penso. Spesso una combinazione delle tre. Dai un occhiata in
+      succede o che penso. Spesso una combinazione delle tre. Dai un'occhiata in
       giro e se vuoi contattarmi per dirmi la tua mi trovi su
       <a
         href="https://twitter.com/andreacanton"
