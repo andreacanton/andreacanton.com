@@ -7,6 +7,7 @@ body
   -moz-osx-font-smoothing grayscale
   font-size 20px
   color $textColor
+  background $backgroundColor
 
 img
   vertical-align middle
@@ -59,3 +60,11 @@ h1, h2, h3, h4, h5, h6
 .content__default
   img
     width 100%
+
+
+body.dark-theme
+  color $darkTextColor
+  background $darkBackgroundColor
+  .header-anchor
+    color $darkBackgroundColor
+

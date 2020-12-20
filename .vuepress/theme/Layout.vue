@@ -39,6 +39,24 @@ export default {
       return this.$page.path == '/blog/';
     },
   },
+  mounted() {
+    const currentTheme = localStorage.getItem('theme');
+    if (
+      currentTheme == 'dark' &&
+      !document.body.classList.contains('dark-theme')
+    ) {
+      document.body.classList.add('dark-theme');
+      return;
+    }
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (prefersDarkScheme.matches) {
+      document.body.classList.add('dark-theme');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.body.classList.remove('dark-theme');
+      localStorage.setItem('theme', 'light');
+    }
+  },
 };
 </script>
 <style lang="stylus" scoped>
@@ -60,4 +78,13 @@ footer
     background-image: linear-gradient(transparent 0%, transparent  calc(50% - 1px), lighten($textColor, 30%)  calc(50% - 1px), lighten($textColor, 30%) 100%)
     &:hover
       color $darkTextColor
+
+body.dark-theme
+  footer
+    color darken($darkTextColor, 30%)
+    a
+      color darken($darkTextColor, 30%)
+      background-image: linear-gradient(transparent 0%, transparent  calc(50% - 1px), darken($darkTextColor, 30%)  calc(50% - 1px), darken($darkTextColor, 30%) 100%)
+      &:hover
+        color $textColor
 </style>

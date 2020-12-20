@@ -1,9 +1,9 @@
 <template>
   <div>
     <p class="intro">
-      Benvenut* nel mio blog! Qui pubblico articoli su quello che faccio, che mi
-      succede o che penso. Spesso una combinazione delle tre. Dai un'occhiata in
-      giro e se vuoi contattarmi per dirmi la tua mi trovi su
+      Benvenut&#601; nel mio blog! Qui pubblico articoli su quello che faccio,
+      che mi succede o che penso. Spesso una combinazione delle tre. Dai
+      un'occhiata in giro e se vuoi contattarmi per dirmi la tua mi trovi su
       <a
         href="https://twitter.com/andreacanton"
         title="Profilo twitter di Andrea Canton"
@@ -74,4 +74,9 @@ export default {
         transition color 120ms ease-in-out
         &:hover
           color: darken($textColor, 50%)
+body.dark-theme
+  .blog-entry h2 a
+    color $darkTextColor
+    &:hover
+      color: darken($darkTextColor, 50%)
 </style>
