@@ -1,5 +1,6 @@
 <template>
   <section class="single-entry">
+    <img class="hero" :src="this.$page.frontmatter.image" :alt="$page.title + ' cover'" />
     <BlogEntryMeta :thePage="this.$page" />
     <h1>{{ $page.title }}</h1>
     <Content />
@@ -42,6 +43,9 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
+.hero
+  width 100%
+  margin-bottom 1em
 .meta, footer, .last-update
   font-family 'JetBrains Mono', monospace
 footer
