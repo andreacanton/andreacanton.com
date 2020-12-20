@@ -15,7 +15,7 @@
     "personal",
     "website"
   ],
-  "author": "Andrea Canton - @andreacanton",
+  "author": "Andrea Canton <hello@andreacanton.dev>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/andreacanton/andreacanton.com/issues"
@@ -26,7 +26,7 @@
     "eslint-config-airbnb-base": "~14.2.0",
     "eslint-plugin-import": "~2.21.2",
     "eslint-plugin-vue": "~7.1.0",
-    "vuepress": "~1.4.1",
+    "vuepress": "^1.7.1",
     "vuepress-plugin-container": "~2.1.4",
     "vuepress-plugin-reading-time": "~0.1.1",
     "vuepress-plugin-seo": "~0.1.3"

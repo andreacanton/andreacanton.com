@@ -32,7 +32,7 @@
       </nav>
     </div>
     <picture>
-      <img src="/images/me.jpg" ref="me" alt="Andrea Canton Web Developer" />
+      <img :src="photoSrc" ref="me" alt="Andrea Canton Web Developer" />
     </picture>
   </div>
 </template>
@@ -42,6 +42,11 @@ import Icon from './Icon';
 export default {
   components: {
     Icon,
+  },
+  data() {
+    return {
+      photoSrc: '/images/me.jpg',
+    };
   },
   computed: {
     haveBlogEntries() {
@@ -77,6 +82,12 @@ export default {
       }
     },
   },
+  beforeMount() {
+    this.photoSrc =
+      localStorage.getItem('theme') === 'dark'
+        ? '/images/me-dark.jpg'
+        : '/images/me.jpg';
+  },
 };
 </script>
 <style lang="stylus">
@@ -88,7 +99,7 @@ html, body, .home, #app, .container
   text-align center
   display flex
   flex-direction column
-.content 
+.content
   flex 1 0 auto
 h1
   padding-top 100px
@@ -130,7 +141,6 @@ nav
         background-position 0px 0px
         &:hover
           background-image: linear-gradient(transparent 0%, transparent 50%, $grey 50%, $grey 100%)
-          color rgb(33, 36, 40)
           background-position 0px 100%
           color: $darkTextColor
 picture
@@ -145,4 +155,9 @@ picture
   picture
     img
       width: 100%;
+body.dark-theme
+  nav ul li a.blog
+    color $lightGrey
+    &:hover
+      color $white
 </style>

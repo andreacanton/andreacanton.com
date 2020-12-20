@@ -23,13 +23,18 @@
             <Icon name="devto" />
           </a>
         </li>
+        <li>
+          <ThemeToggler />
+        </li>
       </ul>
     </nav>
   </header>
 </template>
 <script>
+import ThemeToggler from './ThemeToggler';
 export default {
   name: 'Topbar',
+  components: { ThemeToggler },
 };
 </script>
 <style lang="stylus" scoped>
@@ -40,12 +45,7 @@ header
   flex-direction column
   align-items center
 
-picture
-  img
-    border-radius 50%
-    border 2px solid lighten($grey, 30%)
-    margin-right: 10px
-    transition border-color 120ms ease-in-out
+
 a.logo
   display block
   text-decoration none
@@ -53,6 +53,11 @@ a.logo
   font-size 30px
   font-weight 700
   transition color 120ms ease-in-out
+  picture img
+      border-radius 50%
+      border 2px solid lighten($grey, 30%)
+      margin-right: 10px
+      transition border-color 120ms ease-in-out
   &:hover
     color: darken($textColor, 50%)
     picture img
@@ -71,4 +76,13 @@ nav
   header
     flex-direction row
     justify-content space-between
+body.dark-theme
+  a.logo
+    color $darkTextColor
+    picture img
+      border-color white
+    &:hover
+      color: darken($darkTextColor, 50%)
+      picture img
+        border-color: darken($white, 20%)
 </style>
