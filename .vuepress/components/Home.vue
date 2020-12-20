@@ -43,6 +43,11 @@ export default {
   components: {
     Icon,
   },
+  data() {
+    return {
+      photoSrc: '/images/me.jpg',
+    };
+  },
   computed: {
     haveBlogEntries() {
       const blogPages = this.$site.pages.filter(
@@ -54,11 +59,6 @@ export default {
           !p.frontmatter.draft
       );
       return blogPages.length > 0;
-    },
-    photoSrc() {
-      return localStorage.getItem('theme') === 'dark'
-        ? '/images/me-dark.jpg'
-        : '/images/me.jpg';
     },
   },
   methods: {
@@ -81,6 +81,12 @@ export default {
           2}px`;
       }
     },
+  },
+  beforeMount() {
+    this.photoSrc =
+      localStorage.getItem('theme') === 'dark'
+        ? '/images/me-dark.jpg'
+        : '/images/me.jpg';
   },
 };
 </script>

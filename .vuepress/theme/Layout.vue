@@ -39,7 +39,7 @@ export default {
       return this.$page.path == '/blog/';
     },
   },
-  created() {
+  beforeMount() {
     const currentTheme = localStorage.getItem('theme');
     if (
       currentTheme == 'dark' &&
